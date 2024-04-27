@@ -2914,185 +2914,6 @@ canvas {
     padding-bottom: 120px;
 }
 
-.news-one__single {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
-}
-
-.news-one__img {
-    position: relative;
-    display: block;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    overflow: hidden;
-}
-
-.news-one__img img {
-    width: 100%;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    transition: all 500ms ease;
-    transform: scale(1);
-}
-
-.news-one__single:hover .news-one__img img {
-    transform: scale(1.05);
-}
-
-.news-one__img>a {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(var(--thm-black-rgb), 0.3);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: var(--thm-base);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-30%);
-}
-
-.news-one__img>a>span {
-    position: relative;
-}
-
-.news-one__img>a>span::before {
-    content: '';
-    width: 20px;
-    height: 2px;
-    background-color: var(--thm-base);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 500ms ease;
-}
-
-.news-one__img>a>span::after {
-    content: '';
-    transition: all 500ms ease;
-    width: 2px;
-    height: 20px;
-    background-color: var(--thm-base);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.news-one__img>a:hover>span::before,
-.news-one__img>a:hover>span::after {
-    background-color: var(--thm-primary);
-}
-
-.news-one__single:hover .news-one__img>a {
-    visibility: visible;
-    transform: translateY(0%);
-    opacity: 1;
-}
-
-.news-one__date-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: var(--thm-base);
-    padding: 17px 22px 20px;
-    border-top-right-radius: 8px;
-}
-
-.news-one__date-box p {
-    font-size: 14px;
-    color: var(--thm-black);
-    font-weight: 800;
-    margin: 0;
-    line-height: 17px;
-    text-align: center;
-}
-
-.news-one__content {
-    position: relative;
-    display: block;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, .05);
-    padding: 20px 42px 30px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom: 3px solid transparent;
-    transition: all 500ms ease;
-}
-
-.news-one__single:hover .news-one__content {
-    border-bottom: 3px solid var(--thm-extra);
-}
-
-.news-one__meta {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    margin: 0;
-}
-
-.news-one__meta li+li {
-    margin-left: 10px;
-}
-
-.news-one__meta li a {
-    color: var(--thm-gray);
-    font-size: 14px;
-    transition: all 500ms ease;
-}
-
-.news-one__meta li a:hover {
-    color: var(--thm-extra);
-}
-
-.news-one__meta li a i {
-    color: var(--thm-extra);
-}
-
-.news-one__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.news-one__title a {
-    color: var(--thm-black);
-    transition: all 500ms ease;
-}
-
-.news-one__single:hover .news-one__title a {
-    color: var(--thm-primary);
-}
-
-.news-one__text {
-    font-size: 16px;
-    margin: 0;
-    line-height: 30px;
-    padding-top: 13px;
-    padding-bottom: 8px;
-}
-
-.news-one__read-more-btn {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--thm-black);
-    display: inline-block;
-    transition: all 500ms ease;
-}
-
-.news-one__read-more-btn:hover {
-    color: var(--thm-extra);
-}
-
 /*--------------------------------------------------------------
 # News One
 --------------------------------------------------------------*/
@@ -3172,10 +2993,11 @@ canvas {
 # Site Footer
 --------------------------------------------------------------*/
 .site-footer {
-    position: relative;
-    display: block;
+    position: static;
     background-color: #1b1825;
-    margin-top: -120px;
+    bottom:0;
+    height: 30px;
+    width: 100%;
 }
 
 .site-footer__top {
@@ -3458,10 +3280,10 @@ canvas {
 .site-footer__bottom {
     position: relative;
     display: block;
-    z-index: 2;
 }
 
 .site-footer__bottom-container {
+    content: "";
     position: relative;
     display: block;
     max-width: 1595px;
@@ -4513,6 +4335,8 @@ canvas {
 }
 
 .team-one__img {
+    width: 270px;
+    height: 331px;
     position: relative;
     display: block;
     border-radius: var(--thm-bdr-radius);
@@ -6545,8 +6369,9 @@ canvas {
 
 .about-two__left {
     position: relative;
-    display: block;
-    margin-right: 62px;
+    width: 250px; /* 设置图片容器的宽度 */
+    height: 250px; /* 设置图片容器的高度 */
+    margin-right: 20px; /* 添加图片和文字之间的间距 */
 }
 
 .about-two__img {
@@ -6555,18 +6380,19 @@ canvas {
 }
 
 .about-two__img img {
-    width: 100%;
-    border-radius: var(--thm-bdr-radius);
+    width: 100%; /* 使图片宽度充满容器 */
+            height: 100%; /* 使图片高度充满容器 */
+            object-fit: cover; /* 保持图片的宽高比，并根据设置的尺寸进行裁剪 */
 }
 
 .about-two__right {
     position: relative;
-    display: block;
-    margin-left: -30px;
+    width: calc(100% - 250px - 20px); /* 计算右侧容器的宽度 */
+    margin-top: 10px; /* 确保文字位于图片上方 */
 }
 
 .about-two__right .section-title {
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .about-two__text-1 {
