@@ -487,7 +487,7 @@ canvas {
 .main-menu-wrapper__logo {
     position: relative;
     float: left;
-    padding-top: 33px;
+    padding-top: 25px;
     padding-bottom: 32px;
     margin-right: 165px;
 }
@@ -1402,8 +1402,8 @@ canvas {
     transform: scale(1);
     transition: transform 7000ms ease;
     z-index: 1;
-    mix-blend-mode: luminosity;
-    opacity: .3;
+    /*mix-blend-mode: luminosity;*/
+    /*opacity: .3;*/
 }
 
 
@@ -4809,7 +4809,7 @@ canvas {
     display: block;
     padding: 147px 0 185px;
     z-index: 1;
-    background-color: var(--thm-black);
+    /*background-color: var(--thm-black);*/
 }
 
 .page-header-bg {
@@ -4821,8 +4821,8 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    mix-blend-mode: luminosity;
-    opacity: 0.3;
+    /*mix-blend-mode: luminosity;*/
+    /*opacity: 0.3;*/
 }
 
 
@@ -4843,7 +4843,7 @@ canvas {
 
 .page-header__inner h2 {
     font-size: 50px;
-    color: var(--thm-base);
+    /*color: var(--thm-base);*/
     line-height: 50px;
     font-weight: 900;
 }
@@ -6367,27 +6367,23 @@ canvas {
     padding: 120px 0 120px;
 }
 
+
 .about-two__left {
     position: relative;
-    width: 250px; /* 设置图片容器的宽度 */
-    height: 250px; /* 设置图片容器的高度 */
+    /*width: 250px;*/ /* 设置图片容器的宽度 */
+    /*height: 250px;*/ /* 设置图片容器的高度 */
     margin-right: 20px; /* 添加图片和文字之间的间距 */
 }
 
-.about-two__img {
-    position: relative;
-    display: block;
-}
-
-.about-two__img img {
-    width: 100%; /* 使图片宽度充满容器 */
-            height: 100%; /* 使图片高度充满容器 */
-            object-fit: cover; /* 保持图片的宽高比，并根据设置的尺寸进行裁剪 */
+.about-two__left img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
 }
 
 .about-two__right {
     position: relative;
-    width: calc(100% - 250px - 20px); /* 计算右侧容器的宽度 */
+    /*width: calc(100% - 250px - 20px);*/ /* 计算右侧容器的宽度 */
     margin-top: 10px; /* 确保文字位于图片上方 */
 }
 
